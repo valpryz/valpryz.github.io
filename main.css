@@ -1,0 +1,591 @@
+html, body {
+    background-color: #fafafa;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, .75);
+    font-family: Signika, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  /*NAVBAR SECTION
+  ------------------*/
+  
+  header {
+    background-color: #42596b;
+    font-family: Signika, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  header nav ul {
+    margin: 0;
+    height: 62px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header nav ul li {
+    margin-right: 16px;
+  }
+  
+  header nav ul li:last-child {
+    margin-right: 40px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #ffcf5c;
+    font-size: 1.25rem;
+    -webkit-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+  }
+  
+  header nav ul li a:hover {
+    color: white;
+  }
+  
+  /*HOME SECTION
+  ------------------*/
+  
+  .homesection {
+    background: #56bfec;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: calc(100vh - 12rem);
+  }
+  
+  .home-container {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 1168px;
+  }
+  
+  .home-Description {
+    width: calc(50% - 2.5rem);
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: calc(50% - 2.5rem);
+    margin: 1rem;
+  }
+  
+  .home-Description h1 {
+    margin-top: 0;
+    font-size: 5rem;
+    letter-spacing: -.1875rem;
+    line-height: 1;
+    color: #1D4352;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  
+  .home-Description p {
+    max-width: 500px;
+    color: #fff;
+    font-size: 1.675rem;
+    font-weight: 300;
+    line-height: 1.25;
+    margin: 0 0 2rem 0;
+  }
+  
+  .home-Robot {
+    width: calc(50% - 2.5rem);
+    height: 400px;
+    min-width: 320px;
+    margin: 1rem;
+    background: center;
+    background-image: url("images/tickybot-robot.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  #robotHead {
+      position: relative;
+      top: 12%;
+      width: 50%;
+      max-width: 220px;
+      height: auto;
+      animation: robotHead 14s linear infinite;
+  }
+  
+  @keyframes robotHead {
+      0% {transform: rotate(0deg);}
+      10% {transform: rotate(10deg);}
+      20% {transform: rotate(10deg);}
+      30% {transform: rotate(0deg);}
+      40% {transform: rotate(0deg);}
+      50% {transform: scale(0.9);}
+      60% {transform: rotate(0deg);}
+      70% {transform: rotate(0deg);}
+      80% {transform: rotate(-10deg);}
+      90% {transform: rotate(-10deg);}
+      100% {transform: rotate(0deg);}
+  }
+  
+  /* BUTTON ____________ */
+  
+  .home-Description a {
+    min-width: 268px;
+    width: 268px;
+    padding: 16px;
+    border-radius: 4px;
+    margin-left: 5rem auto;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: white;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+    transition: .3s ease-in-out;
+  }
+  
+  .home-Description a img {
+    margin-right: 16px;
+    width: 2.5rem;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .home-Description a:hover, .home-Description a:focus {
+    transform: scale(0.98);
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
+  .home-Description a:hover img {
+    transform: scale(1.5) rotate(18deg);
+  }
+  
+  .home-Description a span {
+    font-family: Signika, cursive;
+    font-weight: 300;
+    font-size: 28px;
+  }
+  
+  .cardDescription p {
+    margin-bottom: 5px;
+    color: #fff;
+    width: 100%;
+    min-width: 400px;
+    line-height: 1.5;
+    font-size: 1.65rem;
+    text-align: center;
+  }
+  
+  .cardDescription a img {
+    margin-right: 16px;
+    width: 2.5rem;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .cardDescription a:hover, .start-using a:focus {
+    transform: scale(0.98);
+  }
+  
+  .cardDescription a:hover img {
+    transform: scale(1.5) rotate(18deg);
+  }
+  
+  /*ABOUT SECTION
+  ------------------*/
+  
+  #about {
+    padding: 1rem;
+  }
+  
+  /*START-USING SECTION
+  ------------------*/
+  
+  .start-using-section {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .start-using {
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 16px;
+  }
+  
+  .start-using p {
+    text-align: center;
+    min-width: 300px;
+    max-width: 536px;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-family: Signika, cursive;
+    font-weight: 300;
+    color: rgba(0, 0, 0, .75);
+    margin: 0 0 16px 0;
+  }
+  
+  .start-using a {
+    min-width: 268px;
+    width: 268px;
+    padding: 16px;
+    border-radius: 4px;
+    margin-left: 5rem auto;
+    background-color: #40596b;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 64px 118px 80px 118px;
+    transition: .3s ease-in-out;
+  }
+  
+  .start-using a img {
+    margin-right: 16px;
+    width: 2.5rem;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .start-using a:hover, .start-using a:focus {
+    transform: scale(0.98);
+    background-color: rgba(0, 0, 0, .7);
+  }
+  
+  .start-using a:hover img {
+    transform: scale(1.5) rotate(18deg);
+  }
+  
+  .start-using a span {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Signika, cursive;
+    font-weight: 300;
+    font-size: 28px;
+  }
+  
+  .strong {
+    font-weight: 600;
+  }
+  
+  .undertitle-h3 {
+    text-align: center;
+    min-width: 300px;
+    letter-spacing: -.125rem;
+    margin: 16px 16px 48px 16px;
+    color: rgba(0, 0, 0, .75);
+    font-family: Signika, cursive;
+    font-weight: 300;
+    font-size: 2.5rem;
+  }
+  
+  .undertitle-h3::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-80px, 7vh);
+    background-color: #55c0ec;
+    content: "";
+    width: 160px;
+    height: 3px;
+  }
+  
+  /* HOW IT WORKS SECTION
+  ------------------*/
+  
+  .features {
+    background-color: #90ddaa;
+  }
+  
+  .page {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .container {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  
+  .container--flex {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  
+  .container--flex>* {
+    -webkit-box-flex: 0;
+    -ms-flex: 1 calc(50% - 2em);
+    flex: 1 calc(50% - 2em);
+    margin: 1rem;
+    min-width: 300px;
+  }
+  
+  * {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  .page__title {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    font-size: 2.5rem;
+    letter-spacing: -.125rem;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  .page__title:after {
+    background-color: #55c0ec;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 160px;
+  }
+  
+  .page__third {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 calc(33.33333% - 2rem);
+    flex: 1 0 calc(33.33333% - 2rem);
+  }
+  
+  .card {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    background-color: #40596b;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h3 {
+    font-weight: 300;
+  }
+  
+  /* CSS animations */
+  
+  @-webkit-keyframes reveal-item--visible {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-1rem);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  
+  @-moz-keyframes reveal-item--visible {
+    from {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes reveal-item--visible {
+    from {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .reveal-item {
+    opacity: 0;
+    -webkit-animation: reveal-item--visible ease-in 1;
+    -moz-animation: reveal-item--visible ease-in 1;
+    animation: reveal-item--visible ease-in 1;
+    /* -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+    -webkit-transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), -webkit-transform 1.5s cubic-bezier(.6, -.5, 0, .75);
+    transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), -webkit-transform 1.5s cubic-bezier(.6, -.5, 0, .75);
+    transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), transform 1.5s cubic-bezier(.6, -.5, 0, .75);
+    transition: opacity 1.5s cubic-bezier(.6, -.5, 0, .75), transform 1.5s cubic-bezier(.6, -.5, 0, .75), -webkit-transform 1.5s cubic-bezier(.6, -.5, 0, .75); */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+  }
+  
+  .reveal-item.one {
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  
+  .reveal-item.two {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .reveal-item.three {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  .reveal-item.four {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+  }
+  
+  .reveal-item.five {
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+  }
+  
+  .reveal-item.six {
+    -webkit-animation-delay: 2.2s;
+    -moz-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+  }
+  
+  .reveal-item.seven {
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+    animation-delay: 2.7s;
+  }
+  
+  .reveal-item.eight {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+  
+  .reveal-item.nine {
+    -webkit-animation-delay: 3.2s;
+    -moz-animation-delay: 3.2s;
+    animation-delay: 3.2s;
+  }
+  
+  
+  /* END CSS animations */
+  
+  .card__description {
+    background-color: #fafafa;
+    padding: 1rem;
+  }
+  
+  .card__img {
+    margin: 4rem 0;
+    width: 224px;
+  }
+  
+  code {
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 2px;
+    color: crimson;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: .2rem;
+  }
+  
+  /* HOW IT WORKS SECTION
+  ------------------*/
+  
+  /*FOOTER SECTION
+  ------------------*/
+  
+  footer {
+    background-color: #40596b;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+  }
+  
+  .footer-container {
+    padding: 0 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .footer-container p {
+    margin: 0 0 0.25rem 0;
+    font-family: Signika, cursive;
+    font-size: 0.825rem;
+    line-height: 1.5;
+  }
+  
+  .footer-container p a {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  @media only screen and (max-width: 420px) {
+    /*NAVBAR SECTION
+    ------------------*/
+    header nav {
+      padding: 0 16px 0 16px;
+    }
+    header nav ul {
+      padding: 0px;
+    }
+    header nav ul li:last-child {
+      margin-right: 0px;
+    }
+    /*START-USING SECTION
+    ------------------*/
+    .undertitle-h3 {
+      width: 300px;
+    }
+    .start-using p {
+      max-width: 320px;
+    }
+    /*FOOTER SECTION
+    ------------------*/
+    .footer-container p {
+      width: 200px;
+      margin-bottom: 1rem;
+    }
+  }
